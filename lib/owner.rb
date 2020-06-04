@@ -16,7 +16,7 @@ attr_reader :name, :species
     end
   
   def dogs
-    Dog.all.select {|x| x.owner ==self}
+    Dog.all.select {|x| x.owner == self}
   end
   
   def buy_cat(x)
