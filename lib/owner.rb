@@ -12,7 +12,7 @@ attr_reader :name, :species
   end
   
   def cats
-    Cat.all.map  {|x| x.owner == self}
+    Cat.collect  {|x| x.owner == self}
     end
   
   def dogs
